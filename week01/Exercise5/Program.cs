@@ -31,7 +31,7 @@ class Program
     static int SqaureNumber(int number)
 // SquareNumber - Accepts an integer as a parameter and returns that number squared (as an integer)
     {
-        int num = (int)Math.Pow(number, 2);
+        int num = number * number;
         return num;
     }
 
@@ -53,7 +53,3 @@ class Program
 }
 
 
-// Welcome to the program!
-// Please enter your name: Brother Burton
-// Please enter your favorite number: 42
-// Brother Burton, the square of your number is 1764
