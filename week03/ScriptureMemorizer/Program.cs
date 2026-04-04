@@ -6,75 +6,47 @@ class Program
 {
     static void Main(string[] args)
     {
-        bool quit = false;
-        string response;
+        bool proceed = true;
+
+        Console.WriteLine("");
+        Reference ref1 = new Reference("1 Nephi", 3, 7);
+        Scripture script1 = new Scripture(ref1, "And it came to pass that I, Nephi, said unto my father: I will go and do the things which the Lord hath commanded, for I know that the Lord givethe no Commandments unto the children of men, save he shall prepare a way for them that they may accomplish the thing which he commandeth them.");
+
         
 
-        Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
-
-        Scripture scripture = new Scripture();
-        Console.WriteLine(scripture.GetScripture());
-
-        scripture.SetScripture("Check it out");
-        Console.WriteLine(scripture.GetScripture());
-
-        string[] words = scripture.ScriptureToArray(scripture.Script());
-        //int[] unUsedIndexes = Enumerable.Range(0, words.Length).ToArray();
-        List<int> unUsedIndexes = Enumerable.Range(0, words.Length).ToList();
-        Random.Shared.Shuffle(CollectionsMarshal.AsSpan(unUsedIndexes));
-        // Loop Enter or quit
-        while ( quit != true)
+        while (proceed == true)
         {
-            
+            Console.WriteLine(script1.GetDisplayText());
+            Console.WriteLine("Hit Enter to proceed, or type quit to exit");
+            string quit = Console.ReadLine();
 
-            Console.WriteLine("Hit Enter or type Quit");
-            response = Console.ReadLine().ToLower();
-            bool finished = false;
-
-
-            if (response == "quit" || finished == true)
+            if (quit.ToLower() == "quit")
             {
-                // quit = true;
-                System.Environment.Exit(0);
+                proceed = false;
             }
             else
-            {   
-                if (unUsedIndexes.Count == 0)
+            {
+                Console.Clear();
+                
+                int index = 0;
+                while(index < 3)
                 {
-                    System.Environment.Exit(0);
-
-                }
-                else
-                {
-                    
-                    int index = unUsedIndexes.Count - 1;
-                    // TODO: swap the characters at that index to ----
-                    Console.WriteLine(words[index]);
-                    foreach(char a in words[index])
+                    if(script1.IsCompletelyHidden() == true)
                     {
+                        Console.WriteLine(script1.GetDisplayText());
+                        Environment.Exit(0);
+                    }
+                    else
+                    {
+                    script1.HideRandomWords();
+                    index +=1;
                         
                     }
-
-                    words[index].Replace(words[index], "-");
-                    Console.WriteLine(words[index]);
-
-                     // Removing the last item in the randomized list.!!!!!!
-                    unUsedIndexes.RemoveAt(unUsedIndexes.Count - 1);
-
-                }
-               
-
-                                
+                } 
+                    
                 
-                Console.WriteLine(string.Join(", ", words));
-
-            }
+                
+            } 
         }
-
-    }
-    public string HideWord(int index, string word)
-    {
-        string newWord = word.Replace(word,"-");
-        return newWord;
     }
 }
