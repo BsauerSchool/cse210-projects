@@ -44,6 +44,15 @@ class Program
 
         // Core Requirement 2: Assume that you must have at lease a 70 to pass the class. After determiing the letter grade and printing it out, add a separate if statement to determine if the user passed the course, and if so, display a message to congratulate them. If not, display a different message to encourage them for next time.
 
+        if (intPercentage >= 70)
+        {
+            Console.WriteLine("You passed!!!");
+        }
+        else
+        {
+            Console.WriteLine("You failed the class. Better Luck next time");
+        }
+
         // Core Requirement 3: Change your code from the first part, sot that instead of printing the letter grade in the body of each If, else if, else block, instead create a new variable called letter and then in each blcok, set this variable to the appropriate value. Finally,after the whole series of if ,statements, have a  single print statement that prints the letter grade once.
     }
 }
