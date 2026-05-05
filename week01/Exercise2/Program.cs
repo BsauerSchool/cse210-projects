@@ -4,41 +4,68 @@ class Program
 {
     static void Main(string[] args)
     {
+        string letterGrade;
+        string sign;
         Console.WriteLine("Hello World! This is the Exercise2 Project.");
 
         // Core Requirement 1: Ask the user for their grade percentage, then write a series of if, else if, else statements to print out the appropriate letter grade.
 
         // Ask User for their grade percentage
-        Console.WriteLine("What is your Grade Percentage? ");
+        Console.Write("What is your Grade Percentage? ");
         string stringPercentage = Console.ReadLine();
         int intPercentage = int.Parse(stringPercentage);
 
         // If A
         if (intPercentage >= 90)
         {
-            Console.WriteLine("You Got an A");
+            letterGrade = "A"; 
         }
         else if (intPercentage >= 80)
         {
         // If B
-            Console.WriteLine("You got a B");
+            letterGrade = "B";
         }
         else if (intPercentage >= 70)
         {
         // If C
-            Console.WriteLine("You got a C");
+            letterGrade = "C";
         }
         else if (intPercentage >= 60)
         {
         // If D
-            Console.WriteLine("You got a D");
+            letterGrade = "D";
         }
         else
         {
         // If F
-            Console.WriteLine("You got an F");
+            letterGrade = "F";
         }
 
+        // Stretch Challange
+        int mod = intPercentage % 10;
+
+        if (intPercentage > 94  || intPercentage <= 60)
+        {
+            letterGrade = letterGrade;
+        }
+        else
+        {
+                if (mod >= 7)
+            {
+                sign = "+";
+                letterGrade = letterGrade + sign;
+            }
+            else if (mod < 3)
+            {
+                sign = "-";
+                letterGrade = letterGrade + sign;
+            }
+        }
+        
+
+        
+        
+        Console.WriteLine($"You got a {letterGrade} grade.");
 
 
 
