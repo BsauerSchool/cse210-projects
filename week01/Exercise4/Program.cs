@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise4 Project.");
+        //Console.WriteLine("Hello World! This is the Exercise4 Project.");
 
         List<int> numbers = new List<int>();
 
@@ -75,10 +75,5 @@ class Program
         {
             Console.WriteLine(x);
         }
-        // Enter a list of numbers, type 0 when finished.
-        // Enter number: 1
-        // The sum is: 122
-        // The average is: 22
-        // The largest number is: 33
     }
 }
