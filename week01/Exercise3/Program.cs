@@ -4,8 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise3 Project.");
-
         string guessString;
         int guess;
 
@@ -15,7 +13,6 @@ class Program
         int magicNumber = randomGenerator.Next(1,100);
         Console.WriteLine(magicNumber);
         
-
         // Core Requirement 2: Add a loop that keeps going until the magic number is guessed.
         do
         {
@@ -38,8 +35,5 @@ class Program
                 Console.WriteLine("Higher");
             }
         } while (guess != magicNumber);
-
-
-
     }
 }

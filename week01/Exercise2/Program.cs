@@ -6,10 +6,8 @@ class Program
     {
         string letterGrade;
         string sign;
-        Console.WriteLine("Hello World! This is the Exercise2 Project.");
 
         // Core Requirement 1: Ask the user for their grade percentage, then write a series of if, else if, else statements to print out the appropriate letter grade.
-
         // Ask User for their grade percentage
         Console.Write("What is your Grade Percentage? ");
         string stringPercentage = Console.ReadLine();
@@ -61,13 +59,8 @@ class Program
                 letterGrade = letterGrade + sign;
             }
         }
-        
-
-        
-        
+           
         Console.WriteLine($"You got a {letterGrade} grade.");
-
-
 
         // Core Requirement 2: Assume that you must have at lease a 70 to pass the class. After determiing the letter grade and printing it out, add a separate if statement to determine if the user passed the course, and if so, display a message to congratulate them. If not, display a different message to encourage them for next time.
 

@@ -4,8 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Console.WriteLine("Hello World! This is the Exercise5 Project.");
-
         // DisplayWelcome - displays the message, "Welcome to the Program!"
         DisplayWelcom();
 
@@ -21,7 +19,6 @@ class Program
         // DisplayResult - accepts the users name and the squared number and displays them
         DisplayResult(name, squaredNumber);
     }
-
     public static void DisplayWelcom()
     {
         Console.WriteLine("Welcome to the Program!");
