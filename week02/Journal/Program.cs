@@ -66,45 +66,5 @@ class Program
                     break;
             }  
         }
-
-
-        // Entry e1 = new Entry();
-        // e1._promptText = prompts.GetRandomPrompt();
-        // Console.WriteLine(e1._promptText);
-        // e1._entryText = Console.ReadLine();
-
-        // DateTime theCurrentTime = DateTime.Now;
-        // e1._date = theCurrentTime.ToShortDateString();
-
-        // Entry e2 = new Entry();
-        // e2._promptText = prompts.GetRandomPrompt();
-        // Console.WriteLine(e2._promptText);
-        // e2._entryText = Console.ReadLine();
-
-        // theCurrentTime = DateTime.Now;
-        // e2._date = theCurrentTime.ToShortDateString();
-
-        // Entry e3 = new Entry();
-        // e3._promptText = prompts.GetRandomPrompt();
-        // Console.WriteLine(e3._promptText);
-        // e3._entryText = Console.ReadLine();
-
-        // theCurrentTime = DateTime.Now;
-        // e3._date = theCurrentTime.ToShortDateString();
-
-        // journal1._entries.Add(e1);
-        // journal1._entries.Add(e2);
-        // journal1._entries.Add(e3);
-
-        // foreach(Entry e in journal1._entries)
-        // {
-        //     e.Display();
-        // }
-
-    }
-
-    public static void CreatePrompts()
-    {
-        
     }
 }
