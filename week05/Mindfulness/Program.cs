@@ -6,18 +6,7 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Mindfulness Project.");
         MenuSelection();
-
-
-        // Testing the Activity Class
-         Activity activity = new Activity();
-        // // Testing the start Message
-        // activity.DisplayStartingMessage();
-        // // Testing the end message
-        // activity.DisplayEndingMessage();
-        // // Testing the animation display
-        //activity.ShowSpinner(10);
-        // // Testing The countdown
-        // activity.ShowCountDown(20);
+        Activity activity = new Activity();
     }
 
     public static void MainMenu()

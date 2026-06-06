@@ -68,8 +68,6 @@ public class Activity
 
     public void ShowCountDown(int seconds)
     {
-        //int i = seconds;
-        
         for (int i = seconds; i > 0; i--)
         {
             if (i > 9)
