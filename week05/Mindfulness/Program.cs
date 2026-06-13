@@ -1,11 +1,13 @@
+// Autthor Brendin Sauer
+// CSE210 Mindfulness Project
 using System;
-// Create the Run program function
+
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Mindfulness Project.");
         MenuSelection();
+
         Activity activity = new Activity();
     }
 
